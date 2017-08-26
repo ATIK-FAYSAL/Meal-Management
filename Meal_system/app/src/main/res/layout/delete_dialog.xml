@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+    android:id="@+id/c_deleteInfo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="31dp"
+    android:textSize="16dp"
+    android:background="#E0E0E0"
+    android:textColor="#000"
+    android:textStyle="bold"
+    android:text="Delete Previous Info"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <CheckBox
+        android:id="@+id/c_deleteReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:background="#E0E0E0"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="Delete Previous Report"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/c_deleteInfo"
+        android:layout_alignLeft="@+id/c_deleteInfo"
+        android:layout_alignStart="@+id/c_deleteInfo" />
+
+    <CheckBox
+        android:id="@+id/c_deleteAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:background="#E0E0E0"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="Delete All information"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/c_deleteReport"
+        android:layout_alignLeft="@+id/c_deleteReport"
+        android:layout_alignStart="@+id/c_deleteReport" />
+
+    <Button
+        android:id="@+id/b_delete"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/log_in_button"
+        android:text="delete"
+        android:textColor="#000"
+        android:layout_below="@+id/c_deleteAll"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp" />
+</RelativeLayout>

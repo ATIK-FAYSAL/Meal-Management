@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+    <TextView
+        android:id="@+id/e_username"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/textfield_style"
+        android:drawableLeft="@drawable/user_icon"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Username"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignLeft="@+id/update"
+        android:layout_alignStart="@+id/update" />
+
+    <TextView
+        android:id="@+id/e_name"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/textfield_style"
+        android:drawableLeft="@drawable/person_icon"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Name"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/e_username"
+        android:layout_alignLeft="@+id/e_username"
+        android:layout_alignStart="@+id/e_username" />
+
+    <EditText
+        android:id="@+id/e_phone"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/textfield_style"
+        android:drawableLeft="@drawable/phone_icon"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Phone"
+        android:inputType="phone"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/e_email"
+        android:layout_alignLeft="@+id/e_email"
+        android:layout_alignStart="@+id/e_email" />
+
+    <EditText
+        android:id="@+id/e_email"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/textfield_style"
+        android:drawableLeft="@drawable/email_icon"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Email"
+        android:inputType="textPersonName"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/e_name"
+        android:layout_alignLeft="@+id/e_name"
+        android:layout_alignStart="@+id/e_name" />
+
+    <EditText
+        android:id="@+id/e_address"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_alignLeft="@+id/e_phone"
+        android:layout_alignStart="@+id/e_phone"
+        android:layout_below="@+id/e_phone"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/textfield_style"
+        android:drawableLeft="@drawable/address_icon"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Address"
+        android:inputType="textPersonName"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="69dp"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:onClick="UpdateManagerInfo"
+        android:textStyle="bold"
+        android:text="Update"
+        android:background="@drawable/round_textfield"
+        android:layout_below="@+id/e_address"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

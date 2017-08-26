@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+    <TextView
+        android:id="@+id/t_name"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:textColor="#000"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/person_icon"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/textfield_style"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/t_email"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:textColor="#000"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/email_icon"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/t_name"
+        android:background="@drawable/textfield_style"
+        android:layout_alignLeft="@+id/t_name"
+        android:layout_alignStart="@+id/t_name" />
+
+    <EditText
+        android:id="@+id/t_phone"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:textColor="#000"
+        android:textStyle="italic"
+        android:background="@drawable/textfield_style"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/phone_icon"
+        android:layout_alignEnd="@+id/t_email"
+        android:layout_alignRight="@+id/t_email"
+        android:layout_below="@+id/t_email"
+        android:layout_marginTop="17dp" />
+
+    <EditText
+        android:id="@+id/t_address"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:textColor="#000"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/address_icon"
+        android:background="@drawable/textfield_style"
+        android:layout_alignLeft="@+id/t_phone"
+        android:layout_alignStart="@+id/t_phone"
+        android:layout_below="@+id/t_phone"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:id="@+id/t_taka"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/t_address"
+        android:layout_alignStart="@+id/t_address"
+        android:layout_below="@+id/t_address"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/textfield_style"
+        android:drawableLeft="@drawable/taka_icon"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/t_parent_phone"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:textColor="#000"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/phone_icon"
+        android:background="@drawable/textfield_style"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/t_taka"
+        android:layout_alignLeft="@+id/t_taka"
+        android:layout_alignStart="@+id/t_taka" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/round_button"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:onClick="update_member_data"
+        android:textColor="#000"
+        android:text="Save changes"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/e_number"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textfield_style"
+        android:drawableLeft="@drawable/taka_icon"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/t_parent_phone"
+        android:layout_alignRight="@+id/t_address"
+        android:layout_alignEnd="@+id/t_address" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text="+"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_alignBaseline="@+id/e_number"
+        android:layout_alignBottom="@+id/e_number"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

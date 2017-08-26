@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/edit_profile"
+            android:icon="@drawable/member_icon"
+            android:title="Edit Profile" />
+        <item
+            android:id="@+id/CurrnetStatus"
+            android:title="Current Status"
+            android:icon="@drawable/current_icon"></item>
+        <item
+            android:id="@+id/report"
+            android:title="Previous Report"
+            android:icon="@drawable/previous_report_icon"></item>
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout_icon"
+            android:title="Log out" />
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/change_pass"
+                android:icon="@drawable/password_icon"
+                android:title="Change Password" />
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/feedback"
+                android:title="Feedback"
+                android:icon="@drawable/feedback_icon"/>
+            <item
+                android:id="@+id/delete"
+                android:icon="@drawable/delete_icon"
+                android:title="Delete info" />
+        </menu>
+    </item>
+
+</menu>

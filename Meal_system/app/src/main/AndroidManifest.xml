@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.atik_faysal.meal_system">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="Meal System"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".manager_info"
+            android:label="Manager information" />
+        <activity
+            android:name=".home_page"
+            android:label="Meal System"
+            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".add_member"
+            android:label="New Member"></activity>
+        <activity android:name=".see_all_member"
+            android:label="All Member"></activity>
+        <activity android:name=".show_person_information"
+            android:label="Information"></activity>
+        <activity android:name=".delete_member"
+            android:label="Delete member"></activity>
+        <activity android:name=".bazar_code"
+            android:label="Bazar List"></activity>
+        <activity android:name=".Current_Status"
+            android:label="Current Status"></activity>
+        <activity android:name=".insert_meal_code"
+            android:label="Input Meal"></activity>
+        <activity android:name=".update_meal_code"
+            android:label="Update Meal"></activity>
+        <activity android:name=".UpdatePersonMeal"
+            android:label="Update Person Meal"></activity>
+        <activity android:name=".DailyReport"
+            android:label="Daily Report"></activity>
+        <activity android:name=".ListOfMemberName"></activity>
+        <activity android:name=".PersonalMeal"></activity>
+        <activity android:name=".EditProfile"
+            android:label="Edit Manager Information">
+        </activity>
+        <activity android:name=".ChangePassword"
+            android:label="Change Password"></activity>
+        <activity android:name=".Feedback"
+            android:label="Feedback"></activity>
+        <activity android:name=".MonthlyReport"
+            android:label="Monthly Report"></activity>
+        <activity android:name=".HelpCenter"></activity>
+        <activity android:name=".ShowReport"></activity>
+    </application>
+
+</manifest>

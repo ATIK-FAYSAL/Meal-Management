@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/meal_rate_text"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:background="@drawable/textfield_style"
+        android:layout_centerVertical="true"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#E53935"
+        android:layout_toRightOf="@+id/textView20"
+        android:layout_toEndOf="@+id/textView20"
+        android:layout_marginLeft="51dp"
+        android:layout_marginStart="51dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_below="@+id/textView16"
+        android:layout_marginTop="17dp"
+        android:text="Current Balance:"
+        android:textColor="#40C4FF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/remainder_text"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#E53935"
+        android:background="@drawable/textfield_style"
+        android:layout_alignTop="@+id/textView20"
+        android:layout_alignLeft="@+id/meal_rate_text"
+        android:layout_alignStart="@+id/meal_rate_text" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="135dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:text="Total Cost :"
+        android:textColor="#40C4FF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="135dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="75dp"
+        android:text="Total Balance :"
+        android:textColor="#40C4FF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/total_cost_text"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:background="@drawable/textfield_style"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#E53935"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_alignLeft="@+id/remainder_text"
+        android:layout_alignStart="@+id/remainder_text" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" ></include>
+
+    <TextView
+        android:id="@+id/total_taka_text"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:background="@drawable/textfield_style"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#E53935"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignLeft="@+id/total_cost_text"
+        android:layout_alignStart="@+id/total_cost_text" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="#40C4FF"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Current Meal Rate :"
+        android:layout_alignTop="@+id/meal_rate_text"
+        android:layout_alignLeft="@+id/textView20"
+        android:layout_alignStart="@+id/textView20" />
+</RelativeLayout>

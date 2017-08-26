@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "207778927848",
+    "firebase_url": "https://meal-system.firebaseio.com",
+    "project_id": "meal-system",
+    "storage_bucket": "meal-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207778927848:android:6b8a45a7295aea75",
+        "android_client_info": {
+          "package_name": "com.example.atik_faysal.meal_system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207778927848-dqufi97i6at125bicmit6086236f9g86.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.atik_faysal.meal_system",
+            "certificate_hash": "295343547cea99bce8631ca790755908c5f9d7c9"
+          }
+        },
+        {
+          "client_id": "207778927848-uue1ha60kg26vegeromulnoj243bthd0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBt3xS0QYruWriW3T1t4lJ2xe0euK7-I_E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207778927848-uue1ha60kg26vegeromulnoj243bthd0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

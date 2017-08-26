@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/app_background"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/relativeLayout4"
+        android:background="#1DE9B6"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:id="@+id/t_date"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/t_member_name"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:background="@drawable/textfield_style"
+            android:textColor="#2196F3"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_below="@+id/t_date"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/t_member_name"
+            android:layout_alignLeft="@+id/t_member_name"
+            android:layout_alignRight="@+id/t_member_name"
+            android:layout_alignStart="@+id/t_member_name"
+            android:layout_below="@+id/t_member_name"
+            android:layout_marginTop="12dp"
+            android:text="  Breakfast          Lunch              Dinner"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/t_breakfast"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/textfield_style"
+            android:textColor="#E91E63"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/textView13"
+            android:layout_alignLeft="@+id/textView13"
+            android:layout_alignStart="@+id/textView13" />
+
+        <EditText
+            android:id="@+id/t_launch"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#E91E63"
+            android:background="@drawable/textfield_style"
+            android:layout_alignBaseline="@+id/t_breakfast"
+            android:layout_alignBottom="@+id/t_breakfast"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/t_dinner"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#E91E63"
+            android:background="@drawable/textfield_style"
+            android:layout_alignBaseline="@+id/t_launch"
+            android:layout_alignBottom="@+id/t_launch"
+            android:layout_alignRight="@+id/textView13"
+            android:layout_alignEnd="@+id/textView13" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:onClick="OnClickMethod"
+            android:textStyle="bold"
+            android:text="Update"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/t_breakfast"
+            android:layout_alignStart="@+id/t_breakfast"
+            android:layout_marginBottom="11dp" />
+        </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorPrimary"
+        android:dividerHeight="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout4" />
+
+
+
+</RelativeLayout>

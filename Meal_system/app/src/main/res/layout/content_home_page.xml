@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.atik_faysal.meal_system.home_page"
+    tools:showIn="@layout/app_bar_home_page">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/home3"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/b_updatemeal"
+            android:layout_width="225dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/b_inputmeal"
+            android:layout_alignStart="@+id/b_inputmeal"
+            android:layout_below="@+id/b_inputmeal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonshap"
+            android:drawableLeft="@drawable/edit_icon"
+            android:gravity="center"
+            android:onClick="button"
+            android:text="edit"
+            android:textColor="#7AFFC6"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/b_dailyreport"
+            android:layout_width="225dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/b_personmeal"
+            android:layout_alignStart="@+id/b_personmeal"
+            android:layout_below="@+id/b_personmeal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonshap"
+            android:drawableLeft="@drawable/day_icon"
+            android:onClick="button"
+            android:text="daily report"
+            android:textColor="#7AFFC6"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/b_addmember"
+            android:layout_width="225dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/buttonshap"
+            android:drawableLeft="@drawable/member_icon"
+            android:onClick="button"
+            android:text="Add"
+            android:textColor="#7AFFC6"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/b_monthlyreport"
+            android:layout_width="225dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/b_dailybazar"
+            android:layout_alignStart="@+id/b_dailybazar"
+            android:layout_below="@+id/b_dailybazar"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/buttonshap"
+            android:drawableLeft="@drawable/calender_icon"
+            android:onClick="button"
+            android:text="Monthly report"
+            android:textColor="#7AFFC6"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/b_memberlist"
+            android:layout_width="225dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/b_updatemeal"
+            android:layout_alignStart="@+id/b_updatemeal"
+            android:layout_below="@+id/b_updatemeal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonshap"
+            android:drawableLeft="@drawable/list_icon"
+            android:onClick="button"
+            android:text="member's"
+            android:textColor="#7AFFC6"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/b_personmeal"
+            android:layout_width="225dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/b_memberlist"
+            android:layout_alignStart="@+id/b_memberlist"
+            android:layout_below="@+id/b_memberlist"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonshap"
+            android:drawableLeft="@drawable/p_meal_icon"
+            android:onClick="button"
+            android:text="Personal meal"
+            android:textColor="#7AFFC6"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/b_inputmeal"
+            android:layout_width="225dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/b_addmember"
+            android:layout_alignStart="@+id/b_addmember"
+            android:layout_below="@+id/b_addmember"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/buttonshap"
+            android:drawableLeft="@drawable/meal_icon"
+            android:onClick="button"
+            android:text="meal"
+            android:textColor="#7AFFC6"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/b_deletemember"
+            android:layout_width="225dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/b_dailybazar"
+            android:layout_alignStart="@+id/b_dailybazar"
+            android:layout_below="@+id/b_monthlyreport"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonshap"
+            android:drawableLeft="@drawable/delete_icon"
+            android:onClick="button"
+            android:text="delete  member"
+            android:textColor="#7AFFC6"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/b_dailybazar"
+            android:layout_width="225dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/b_dailyreport"
+            android:layout_alignStart="@+id/b_dailyreport"
+            android:layout_below="@+id/b_dailyreport"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/buttonshap"
+            android:drawableLeft="@drawable/taka_icon"
+            android:onClick="button"
+            android:text="cost"
+            android:textColor="#7AFFC6"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/app_background"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+    <EditText
+        android:id="@+id/e_fedback"
+        android:layout_width="350dp"
+        android:background="@drawable/textfield_style"
+        android:hint="Type your suggestion in 20-200 Character"
+        android:textStyle="bold"
+        android:textColorHint="#9E9E9E"
+        android:layout_height="170dp"
+        android:ems="10"
+        android:gravity="center"
+        android:textColor="#9E9E9E"
+        android:textSize="12dp"
+        android:inputType="textPersonName"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/t_value"
+        android:layout_centerHorizontal="true" />
+
+    <RatingBar
+        android:id="@+id/r_feedback"
+        android:layout_width="295dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/textView25"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/t_value"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="28dp"
+        android:text="Total Rating : "
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/r_feedback"
+        android:layout_alignLeft="@+id/r_feedback"
+        android:layout_alignStart="@+id/r_feedback" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/round_textfield"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:onClick="saveValue"
+        android:text="Post"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/e_fedback"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/r_feedback"
+        android:layout_alignStart="@+id/r_feedback"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="26dp"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Rate this app " />
+
+</RelativeLayout>

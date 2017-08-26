@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:background="@drawable/log_in_button"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="atik"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="10dp"
+        android:text="Total Meal : "
+        android:textColor="#000"
+        android:layout_below="@+id/txt_name"
+        android:layout_alignLeft="@+id/txt_name"
+        android:layout_alignStart="@+id/txt_name" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Total Taka :"
+        android:textColor="#000"
+        android:layout_below="@+id/textView19"
+        android:layout_alignLeft="@+id/textView19"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="#000"
+        android:text="Total Cost :"
+        android:layout_below="@+id/textView27"
+        android:layout_alignLeft="@+id/textView27"
+        android:layout_alignStart="@+id/textView27"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pending :"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView29"
+        android:layout_alignLeft="@+id/textView29"
+        android:layout_alignStart="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/txt_meal"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="#BDBDBD"
+        android:layout_alignBaseline="@+id/textView19"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_toEndOf="@+id/textView19"
+        android:layout_toRightOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/txt_taka"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="#BDBDBD"
+        android:layout_alignBaseline="@+id/textView27"
+        android:layout_alignBottom="@+id/textView27"
+        android:layout_toEndOf="@+id/textView19"
+        android:layout_toRightOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/txt_cost"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="#BDBDBD"
+        android:layout_alignBottom="@+id/textView29"
+        android:layout_alignLeft="@+id/txt_taka"
+        android:layout_alignStart="@+id/txt_taka" />
+
+    <TextView
+        android:id="@+id/txt_due"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="#BDBDBD"
+        android:layout_alignLeft="@+id/txt_cost"
+        android:layout_alignStart="@+id/txt_cost"
+        android:layout_alignTop="@+id/textView32" />
+
+</RelativeLayout>

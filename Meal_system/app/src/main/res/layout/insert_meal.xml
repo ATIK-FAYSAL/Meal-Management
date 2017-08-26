@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/app_background"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:background="#03A9F4"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/relativeLayout3">
+
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/spin_select_name"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/textfield_style"
+        android:layout_below="@+id/date_txt"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/date_txt"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_alignEnd="@+id/relativeLayout3"
+        android:layout_alignRight="@+id/relativeLayout3"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="13dp" />
+
+    <Spinner
+        android:id="@+id/spin_breakfast"
+        android:layout_width="80dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/textfield_style"
+        android:layout_below="@+id/textView12"
+        android:layout_alignLeft="@+id/spin_select_name"
+        android:layout_alignStart="@+id/spin_select_name" />
+
+    <Spinner
+        android:id="@+id/spin_launce"
+        android:layout_width="80dp"
+        android:layout_height="26dp"
+        android:layout_alignTop="@+id/spin_breakfast"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/textfield_style" />
+
+    <Spinner
+        android:id="@+id/spin_dinner"
+        android:layout_width="80dp"
+        android:layout_height="26dp"
+        android:layout_alignEnd="@+id/spin_select_name"
+        android:layout_alignRight="@+id/spin_select_name"
+        android:layout_alignTop="@+id/spin_launce"
+        android:background="@drawable/textfield_style" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/relativeLayout3"
+        android:layout_alignEnd="@+id/spin_dinner"
+        android:layout_alignLeft="@+id/spin_breakfast"
+        android:layout_alignRight="@+id/spin_dinner"
+        android:layout_alignStart="@+id/spin_breakfast"
+        android:layout_marginBottom="10dp"
+        android:onClick="save_data"
+        android:background="@drawable/round_button"
+        android:text="SAVE"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="3dp"
+        android:divider="@color/colorPrimary"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/spin_dinner"
+        android:layout_alignLeft="@+id/spin_select_name"
+        android:layout_alignRight="@+id/spin_dinner"
+        android:layout_alignStart="@+id/spin_select_name"
+        android:layout_below="@+id/spin_select_name"
+        android:layout_marginTop="12dp"
+        android:text="  Breakfast         Lunch             Dinner"
+        android:textColor="#000"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

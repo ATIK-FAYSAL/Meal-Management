@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_page">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar"></include>
+
+    <EditText
+        android:id="@+id/e_name"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/textfield_style"
+        android:drawableLeft="@drawable/person_icon"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_marginTop="41dp"
+        android:hint="Enter Name"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/e_email"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="@drawable/textfield_style"
+        android:hint="Enter Email"
+        android:drawableLeft="@drawable/email_icon"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/e_name"
+        android:layout_alignLeft="@+id/e_name"
+        android:layout_alignStart="@+id/e_name" />
+
+    <EditText
+        android:id="@+id/e_phone"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/textfield_style"
+        android:drawableLeft="@drawable/phone_icon"
+        android:hint="Enter Phone"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_below="@+id/e_email"
+        android:layout_alignLeft="@+id/e_email"
+        android:layout_alignStart="@+id/e_email" />
+
+    <EditText
+        android:id="@+id/e_address"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:drawableLeft="@drawable/address_icon"
+        android:hint="Enter Address"
+        android:gravity="center"
+        android:background="@drawable/textfield_style"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/e_phone"
+        android:layout_alignLeft="@+id/e_phone"
+        android:layout_alignStart="@+id/e_phone" />
+
+    <EditText
+        android:id="@+id/e_taka"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/textfield_style"
+        android:hint="Enter Taka"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:drawableLeft="@drawable/taka_icon"
+        android:layout_alignLeft="@+id/e_address"
+        android:layout_alignStart="@+id/e_address"
+        android:layout_below="@+id/e_address"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/e_parents_phone"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/textfield_style"
+        android:drawableLeft="@drawable/phone_icon"
+        android:hint="Father/Mother Name"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_alignLeft="@+id/e_taka"
+        android:layout_alignStart="@+id/e_taka"
+        android:layout_below="@+id/e_taka"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="phone" />
+
+</RelativeLayout>

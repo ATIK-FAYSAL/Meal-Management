@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/app_background"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/relativeLayout2">
+
+        <TextView
+            android:id="@+id/total_taka_text"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/date_text"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_toRightOf="@+id/textView"
+            android:background="@drawable/textfield_style"
+            android:textColor="#FF1744"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/total_taka_text"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp"
+            android:text="Total Balance : "
+            android:textColor="#00BCD4"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="10dp"
+            android:text="Total Cost :"
+            android:textColor="#00BCD4"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bazar_text"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/textView"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_toRightOf="@+id/textView"
+            android:background="@drawable/textfield_style"
+            android:textColor="#FF1744"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="12dp"
+            android:text="Today's Cost :"
+            android:textColor="#00BCD4"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/bazar"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/bazar_text"
+            android:layout_alignStart="@+id/bazar_text"
+            android:layout_alignTop="@+id/textView7"
+            android:gravity="center"
+            android:background="@drawable/textfield_style"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="#FF1744" />
+
+        <Spinner
+            android:id="@+id/name_spinner"
+            android:layout_width="200dp"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/bazar"
+            android:layout_alignLeft="@+id/textView7"
+            android:layout_alignRight="@+id/bazar"
+            android:layout_alignStart="@+id/textView7"
+            android:layout_below="@+id/textView7"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textfield_style" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="@color/colorPrimary"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="21dp"
+        android:text="Date"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:text="Name"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/list"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="Taka"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/list"
+        android:layout_alignRight="@+id/list"
+        android:layout_alignEnd="@+id/list" />
+
+
+</RelativeLayout>
